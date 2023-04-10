@@ -1,0 +1,20 @@
+let arr = [3, 5, 1, 9, 2];
+
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
+let avg = sum / arr.length;
+
+console.log("Среднє значення: " + avg);
+console.log("Округлене до меншого: " + Math.floor(avg))
+console.log("Округлене до більшого: " + Math.ceil(avg))
+
+let maxNum = arr[0];
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > maxNum) {
+    maxNum = arr[i];
+  }
+}
+
+console.log("Максимальне число: " + maxNum);
